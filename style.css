@@ -1,0 +1,84 @@
+/* Custom font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/* Color scheme + base */
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #faf7f2;
+    color: #2b2118;
+    margin: 40px;
+    max-width: 700px;
+}
+
+/* Custom margins and typography */
+h1 {
+    font-size: 2rem;
+    color: #b05c3a;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #b05c3a;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: #2b2118;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+p {
+    line-height: 1.7;
+    margin-bottom: 14px;
+    color: #4a3728;
+}
+
+/* Navigation */
+.nav {
+    background-color: #2b2118;
+    padding: 12px 16px;
+    margin-bottom: 24px;
+    border-radius: 6px;
+}
+
+.nav a {
+    color: #faf7f2;
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav a:hover {
+    color: #b05c3a;
+}
+
+/* Links */
+a {
+    color: #b05c3a;
+}
+
+a:hover {
+    color: #2b2118;
+}
+
+/* List spacing */
+ul {
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+
+li {
+    margin-bottom: 6px;
+    color: #4a3728;
+}
+
+/* Image */
+img {
+    margin: 16px 0;
+    border-radius: 6px;
+}

@@ -1,113 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects – Kiswa Kabir</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects – Kiswa Khan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
-  <nav>
-    <div class="nav-inner">
-      <span class="nav-logo">Kiswa Kabir</span>
+  <header>
+    <nav>
+      <span class="logo">Kiswa Khan</span>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html" class="active">Projects</a></li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <div class="page-header">
-    <h2>Projects</h2>
-    <p>A selection of things I've built — from backend pipelines to full-stack apps.</p>
-  </div>
-
-  <main class="container">
+  <main>
+    <section class="page-header">
+      <h2>Projects</h2>
+      <p class="subtitle">A selection of things I've built — from backend pipelines to full-stack apps.</p>
+    </section>
 
     <section class="project-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1280px-Cat_August_2010-4.jpg" alt="project image" width="800">
+      <!-- Replace src with a real screenshot if you have one -->
+      <img src="projects-banner.jpg" alt="Priceline pipeline project" class="banner-photo" />
       <div class="project-body">
         <h3>Rental Car Analytics Pipeline · Priceline</h3>
         <p>
-          During my co-op at Priceline, I designed and implemented a real-time data pipeline that consumed
-          rental car booking events from Apache Kafka and loaded them into Google BigQuery for downstream
-          analytics. The pipeline processed over 1.2 million events per day and served data to dashboards
-          used by 90+ team members.
-        </p>
-        <p>
-          One of the more interesting challenges was handling schema drift — rental car data comes from many
-          different suppliers, and field formats weren't always consistent. I built validation and normalization
-          layers to catch discrepancies before they reached BigQuery, which reduced data quality errors
-          significantly and improved trust in the reporting layer.
+          During my co-op at Priceline, I built a real-time data pipeline that consumed rental car booking
+          events from Apache Kafka and loaded them into Google BigQuery. The pipeline processed over
+          1.2 million events per day and served dashboards used by 90+ team members. I also built
+          validation layers to handle schema inconsistencies across suppliers, which significantly improved
+          data quality downstream.
         </p>
         <h4>Tech stack:</h4>
         <ul>
-          <li>Apache Kafka (event streaming)</li>
-          <li>Google BigQuery (data warehouse)</li>
-          <li>Java / Spring Boot (pipeline service)</li>
-          <li>SQL (transformation and reporting queries)</li>
+          <li>Apache Kafka · Google BigQuery · Java / Spring Boot · SQL</li>
         </ul>
       </div>
     </section>
 
     <section class="project-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1280px-Cat_August_2010-4.jpg" alt="project image" width="800">
-      <div class="project-body">
-        <h3>Airport Counter Data Quality System · Priceline</h3>
-        <p>
-          Rental car counters at airports are mapped to specific locations in Priceline's system. When those
-          mappings go stale or are misconfigured, customers can end up at the wrong counter. I built a data
-          quality system that automatically flagged these discrepancies using a new RawAirportCounter field,
-          comparing incoming booking data against expected mappings across 100+ airport locations.
-        </p>
-        <p>
-          The system surfaced roughly 242 affected bookings during initial validation and was integrated into
-          existing monitoring workflows so the ops team could act on alerts in real time. This was my first
-          project owning something end-to-end — from writing the detection logic to presenting findings to
-          the team.
-        </p>
-        <h4>Key outcomes:</h4>
-        <ul>
-          <li>Detected discrepancies across 100+ airport counter locations</li>
-          <li>Surfaced 242+ potentially affected bookings during validation</li>
-          <li>Integrated into existing ops alerting and monitoring pipelines</li>
-          <li>Presented findings to a cross-functional team of 90+ members</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="project-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1280px-Cat_August_2010-4.jpg" alt="project image" width="800">
+      <img src="projects-banner.jpg" alt="SEAL website project" class="banner-photo" />
       <div class="project-body">
         <h3>Social Equity Action Lab Website · SEAL @ Northeastern</h3>
         <p>
-          I'm currently building and maintaining the website for the Social Equity Action Lab (SEAL), a
-          research lab at Northeastern focused on technology and social justice. The site is built with
-          Next.js 14, TypeScript, and Tailwind CSS, and uses Zustand for global state management and
-          Framer Motion for animations.
-        </p>
-        <p>
-          Working on this project has been a great way to deepen my frontend skills — especially around
-          component architecture and state management patterns. It's also just meaningful work. SEAL does
-          important research, and having a polished, accessible web presence helps them reach more people.
+          I'm currently building and maintaining the website for SEAL, a research lab at Northeastern
+          focused on technology and social justice. The site uses Next.js 14, TypeScript, Tailwind CSS,
+          Zustand for state management, and Framer Motion for animations. It's been a great way to deepen
+          my frontend skills while contributing to work that actually matters.
         </p>
         <h4>Tech stack:</h4>
         <ul>
-          <li>Next.js 14 (React framework)</li>
-          <li>TypeScript (type safety)</li>
-          <li>Tailwind CSS (styling)</li>
-          <li>Zustand (state management)</li>
-          <li>Framer Motion (animations)</li>
+          <li>Next.js 14 · TypeScript · Tailwind CSS · Zustand · Framer Motion</li>
         </ul>
       </div>
     </section>
 
+    <section class="hobbies">
+      <h3>Things I Enjoy Outside of Tech</h3>
+      <ul>
+        <li>🏓 Playing pickleball</li>
+        <li>🍳 Cooking and experimenting with new recipes</li>
+        <li>✈️ Traveling and exploring new cities</li>
+        <li>📸 Photography</li>
+        <li>📚 Reading</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2>Get in Touch</h2>
+      <p>Interested in collaborating or just want to say hi? Reach out anytime.</p>
+      <ul>
+        <li><a href="mailto:khan.ki@northeastern.edu">khan.ki@northeastern.edu</a></li>
+        <li><a href="https://linkedin.com/in/kiswa-khan/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/kiswak" target="_blank">GitHub</a></li>
+      </ul>
+    </section>
   </main>
 
   <footer>
-    <p>© 2026 Kiswa Kabir · Built with HTML, CSS & GitHub Pages</p>
+    <p>© 2026 Kiswa Khan · Built with HTML & CSS</p>
   </footer>
 
 </body>
